@@ -85,7 +85,8 @@ p {
   color: hsl(0, 0%, 100%);
 }
 
-.rating-container button:focus {
+.rating-container button:focus,
+.rating-container button:active {
   background: hsl(216, 12%, 54%) !important;
   color: hsl(0, 0%, 100%) !important;
 }
