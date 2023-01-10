@@ -61,21 +61,28 @@ p {
   text-align: center;
 }
 
-.rating-container div {
+.rating-container button {
   color: hsl(217, 12%, 63%);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 2.8rem;
   width: 2.8rem;
+  border: none;
   border-radius: 50%;
   background: hsl(213, 15%, 24%);
+  cursor: pointer;
 }
 
-.rating-container div:hover,
-.rating-container div:active {
+.rating-container button:hover,
+.rating-container button:active {
   background: hsl(25, 97%, 53%);
   color: hsl(0, 0%, 100%);
+}
+
+.rating-container button:focus {
+  background: hsl(216, 12%, 54%) !important;
+  color: hsl(0, 0%, 100%) !important;
 }
 
 .button {
@@ -83,7 +90,7 @@ p {
   justify-content: center;
 }
 
-button {
+.button button {
   background: hsl(25, 97%, 53%);
   border: none;
   border-radius: 30px;
@@ -94,6 +101,8 @@ button {
   font-size: 1rem;
   letter-spacing: 0.1rem;
   pointer-events: none;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 button:hover {
@@ -109,11 +118,6 @@ button:hover {
   border-radius: 25px;
   padding: 1.6rem 1.4rem 1.6rem 1.9rem;
   text-align: center;
-}
-
-.chosen {
-  background: hsl(216, 12%, 54%) !important;
-  color: hsl(0, 0%, 100%) !important;
 }
 
 .selected-rating-message {
@@ -151,7 +155,7 @@ button:hover {
   .rating-container {
     margin: 2rem 0;
   }
-  .rating-container div {
+  .rating-container button {
     height: 3.2rem;
     width: 3.2rem;
   }
@@ -163,7 +167,7 @@ button:hover {
     height: 425px;
     width: 97%;
   }
-  .rating-container div {
+  .rating-container button {
     height: 2.2rem;
     width: 2.2rem;
   }
