@@ -6,13 +6,14 @@
   padding: 0;
 }
 
-html {
+/* html {
   height: 100%;
-}
+} */
 
 body {
   font-family: "Overpass", sans-serif;
-  height: 100%;
+  height: 100vh;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,7 +174,7 @@ button:hover {
   }
 }
 
-@media (max-height: 29rem) {
+/* @media (max-height: 29rem) {
   .container,
   .container2 {
     padding: 1rem;
@@ -192,4 +193,4 @@ button:hover {
   .selected-rating-message {
     margin-top: 0.5rem;
   }
-}
+} */
